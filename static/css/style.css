@@ -1,7 +1,71 @@
-/* Project-wide style */
+@font-face {
+  font-family: 'Lato';
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Regular.eot");
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("//assets.teachablecdn.com/fonts/lato/Lato-Regular.woff") format("woff"), url("//assets.teachablecdn.com/fonts/lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Lato';
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-BlackItalic.eot");
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-BlackItalic.eot?#iefix") format("embedded-opentype"), url("//assets.teachablecdn.com/fonts/lato/Lato-BlackItalic.woff") format("woff"), url("//assets.teachablecdn.com/fonts/lato/Lato-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap; }
 
-body {
-  font-family: 'Rubik', sans-serif;
+@font-face {
+  font-family: 'Lato';
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Light.eot");
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Light.eot?#iefix") format("embedded-opentype"), url("//assets.teachablecdn.com/fonts/lato/Lato-Light.woff") format("woff"), url("//assets.teachablecdn.com/fonts/lato/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Bold.eot");
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("//assets.teachablecdn.com/fonts/lato/Lato-Bold.woff") format("woff"), url("//assets.teachablecdn.com/fonts/lato/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Italic.eot");
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("//assets.teachablecdn.com/fonts/lato/Lato-Italic.woff") format("woff"), url("//assets.teachablecdn.com/fonts/lato/Lato-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-BoldItalic.eot");
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-BoldItalic.eot?#iefix") format("embedded-opentype"), url("//assets.teachablecdn.com/fonts/lato/Lato-BoldItalic.woff") format("woff"), url("//assets.teachablecdn.com/fonts/lato/Lato-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Black.eot");
+  src: url("//assets.teachablecdn.com/fonts/lato/Lato-Black.eot?#iefix") format("embedded-opentype"), url("//assets.teachablecdn.com/fonts/lato/Lato-Black.woff") format("woff"), url("//assets.teachablecdn.com/fonts/lato/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+body{
+  background-color: white;
+  font-size: 15px;
+  color: #596161 !important;
+}
+
+*{
+  font-family: 'Lato';
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+  background-color: white !important;
+  padding-left: 10%;
+  padding-right: 10%;
 }

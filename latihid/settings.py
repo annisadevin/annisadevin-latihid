@@ -94,11 +94,18 @@ WSGI_APPLICATION = 'latihid.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'derd1o5vbl5ro',
+        'USER': 'fohnzhlkczzmco',
+        'PASSWORD' : '74719f1e51bc4636f0c607a400f1490efb7be60268a65991634932a412a58442',
+        'HOST': 'ec2-34-195-143-54.compute-1.amazonaws.com',
+        'PORT' : '5432',
+        'OPTIONS': {
+            'options': '-c search_path=latihid'
+        },
+
     }
 }
 

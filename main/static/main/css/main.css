@@ -1,0 +1,213 @@
+/* JUMBOTRON */
+.carousel-item {
+    height: 400px;
+    width: auto;
+    min-height: 400px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header1{
+    background-image: url('../img/Jumbotron1.png')
+}
+
+#header2{
+    background-image: url('../img/Jumbotron1.png')
+}
+
+#header3{
+    background-image: url('../img/Jumbotron1.png')
+}
+/* JUMBOTRON */
+
+/* SEARCH DAN KATEGORI */
+#search-dan-kategori{
+    background-image: url('../img/Banner1.png')
+}
+
+.container{
+    height: 300px;
+}
+
+img.img-fluid{
+    height: 50% !important;
+    width: auto !important;
+    margin-left: 25% !important;
+}
+
+p{
+    font-size: 10px;
+    text-align: center;
+}
+
+.card.item.slick-slide.slick-cloned, .card.item.slick-slide.slick-active, .card.item.slick-slide{
+    margin: 0px !important;
+}
+
+.card.item{
+    width: 100px !important;
+    height: 100px !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    justify-content: center !important;
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+    border-radius: 0px !important;
+    background-color: transparent !important;
+}
+
+.card.item:hover{
+    background-color: rgb(59, 59, 59) !important;
+    opacity: 0.5;
+}
+
+#form-cari-kelas, #items{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.card.item2{
+    width: 300px !important;
+    height: 300px !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+}
+
+.container.aboutus{
+    height: 100%;
+}
+
+/* KELAS GRATIS */
+.container.kelas-gratis{
+    height: 100%;
+    background-color: #AEDEE9;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+}
+
+img.img-fluid.kelas-gratis{
+    margin-left: 47% !important;
+    margin-right: 47% !important;
+}
+
+.card.kelas-gratis.slick-slide.slick-cloned, .card.kelas-gratis.slick-slide.slick-active, .card.kelas-gratis.slick-slide{
+     display: flex;
+     width: 150px;
+     height: 300px;
+     flex-direction: column;
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border-radius: 12px;
+     padding-top: 15px;
+     margin-left: 7px;
+     margin-right: 7px;
+     padding-left: 7px;
+     padding-right: 7px;
+}
+
+ .profile-image {
+     width: 100%;
+ }
+
+ .card-title {
+     font-size: 19px;
+     font-weight: 200;
+ }
+
+ .card-body{
+     padding: 0px !important;
+     margin-top: 45%;
+ }
+
+
+#items3,  #items6, #items7, #items8{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#kelas-gratis, #program-unggulan{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+/* KELAS BARU */
+
+#items4, #items5, #items9, #items10, #items11{
+    width: 60%;
+    align-items: flex-end;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.card.item.kelas-baru{
+    margin-left: -30px !important;
+}
+
+.card.item.kelas-baru:hover{
+    background-color: transparent !important;
+}
+
+.card.kelas-kiri{
+    width: 80%;
+    background-color: transparent;
+    border-radius: 0px;
+    border-color: transparent;
+    margin-left: 15%;
+}
+
+.card-body.kelas-kiri{
+    padding: 0px !important;
+    margin-top: 0%;
+}
+
+.container.kelas-baru{
+    height: 100%;
+    background-color: #D7EBEF;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+}
+
+#kelas-baru, #kelas-expert, #kelas-bisnis, #kelas-pemasaran, #kelas-managemen-operasional{
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+/* UNGGULAN */
+#judul-button{
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+/* BANNER BOTTOM */
+#banner-bottom{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://1.bp.blogspot.com/-xj9cgzCuR2o/X4-SU5KwgDI/AAAAAAAAE7k/Y5pAuUEp7rUZXtnTVBtLISC2yJsWUVk_ACLcBGAsYHQ/s0/meeting.png');
+}
+
+/* FOOTER */
+
+.card.footer{
+    background-color: transparent !important;
+    border-color: transparent !important;
+    padding: 2em;
+    min-width:20rem;
+}
+
+.img-fluid.footer{
+    justify-content: center;
+    margin-left: 35%;
+    width: 20% !important;
+    margin-bottom: 10%;
+}
+
+footer{
+    background-color: #EAF6F9;
+}

@@ -124,9 +124,12 @@ img.img-fluid.kelas-gratis{
 
  .card-body{
      padding: 0px !important;
-     margin-top: 45%;
  }
 
+ .col{
+     padding: 0px !important;
+     margin: 0px !important;
+ }
 
 #items3,  #items6, #items7, #items8{
     margin-left: 10%;
@@ -210,4 +213,17 @@ img.img-fluid.kelas-gratis{
 
 footer{
     background-color: #EAF6F9;
+}
+
+/* CARD */
+.card-title.text-left{
+    font-weight: bold !important;
+    font-size: 13px !important;
+    color: black;
+    margin-top: 3%;
+}
+
+#star{
+    color: rgb(180, 180, 39);
+    border-color: black !important;
 }

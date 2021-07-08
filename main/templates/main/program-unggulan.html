@@ -2,28 +2,43 @@
     <div class="d-flex flex-col bd-highlight justify-content-center align-items-center mt-5 mb-5">
       <div class="container kelas-gratis">
         <img class="img-fluid kelas-gratis" src="https://uploads-ssl.webflow.com/5fceb358a1e41ca1c04f7640/60375f7dcf4bf617314a0bbe_Kelas%20Gratis%20Terpopuler.svg">
-        <h5 class="font-weight-bold mt-3 mb-5 text-center">Program Unggulan LatihID</h5>
+        <h5 class="font-weight-bold mt-3 mb-5 text-center">Program Unggulan LatihID</h5>      
         <div class="d-flex bd-highlight" id="judul-button">
             <div class="mr-auto p-2 bd-highlight"><h5 class="font-weight-bold mt-3 mb-5 text-left">LatihID Modul</h5></div>
             <div class="p-2 bd-highlight"><button style="background-color: #FF6A0E; color: white; border-color: transparent;" class="btn btn-light">Lihat Modul Lainnya ></button></div>
         </div>
         <div class="d-flex row bd-highlight justify-content-center align-items-center mb-5" id="items6">
+          {%for modul in listModul%}
+          {% if modul.3 == 'modul unggulan'%}
           <div class="card kelas-gratis">
-            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg"> </div>
-            <h6 class="card-title text-left">Delbert Simonas</h6>
-            <div class="card-body">
-                <h5 class="card-title text-left">.....</h5>
-                <h6 class="card-text text-left" style="color: #FF6A0E;">Gratis</h6>
+            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="{{modul.4}}"> </div>
+            <h6 class="card-title text-left">{{modul.0}}</h6>
+            <div class="card-body d-flex flex-col align-items-end">
+              <div class="col">
+                {%if modul.2 == '1'%}
+                  <h6 class="text-left" id="star">☆☆☆☆★</h6>
+                {%endif%}
+                {%if modul.2 == '2'%}
+                  <h6 class="text-left" id="star">☆☆☆★★</h6>
+                {%endif%}
+                {%if modul.2 == '3'%}
+                  <h6 class="text-left" id="star">☆☆★★★</h6>
+                {%endif%}
+                {%if modul.2 == '4'%}
+                  <h6 class="text-left" id="star">☆★★★★</h6>
+                {%endif%}
+                {%if modul.2 == 5%}
+                  <h6 class="text-left" id="star">★★★★★</h6>
+                {%endif%}
+                {%if modul.2 == 'None'%}
+                  <h6 class="text-left"></h6>
+                {%endif%}
+                <h6 class="text-left" style="color: #FF6A0E;">{{modul.1}}</h6>
+              </div>
             </div>
           </div>
-          <div class="card kelas-gratis">
-            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg"> </div>
-            <h6 class="card-title text-left">Delbert Simonas</h6>
-            <div class="card-body">
-                <h5 class="card-title text-left">.....</h5>
-                <h6 class="card-text text-left" style="color: #FF6A0E;">Gratis</h6>
-            </div>
-          </div>
+          {%endif%}
+          {%endfor%}
         </div>
         
         <div class="d-flex bd-highlight" id="judul-button">
@@ -31,22 +46,37 @@
             <div class="p-2 bd-highlight"><button style="background-color: #FF6A0E; color: white; border-color: transparent;" class="btn btn-light">Lihat Talks Lainnya ></button></div>
         </div>
         <div class="d-flex row bd-highlight justify-content-center align-items-center mb-5" id="items7">
+          {%for modul in listModul%}
+          {% if modul.3 == 'talks unggulan'%}
           <div class="card kelas-gratis">
-            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg"> </div>
-            <h6 class="card-title text-left">Delbert Simonas</h6>
-            <div class="card-body">
-                <h5 class="card-title text-left">.....</h5>
-                <h6 class="card-text text-left" style="color: #FF6A0E;">Gratis</h6>
+            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="{{modul.4}}"> </div>
+            <h6 class="card-title text-left">{{modul.0}}</h6>
+            <div class="card-body d-flex flex-col align-items-end">
+              <div class="col">
+                {%if modul.2 == '1'%}
+                  <h6 class="text-left" id="star">☆☆☆☆★</h6>
+                {%endif%}
+                {%if modul.2 == '2'%}
+                  <h6 class="text-left" id="star">☆☆☆★★</h6>
+                {%endif%}
+                {%if modul.2 == '3'%}
+                  <h6 class="text-left" id="star">☆☆★★★</h6>
+                {%endif%}
+                {%if modul.2 == '4'%}
+                  <h6 class="text-left" id="star">☆★★★★</h6>
+                {%endif%}
+                {%if modul.2 == 5%}
+                  <h6 class="text-left" id="star">★★★★★</h6>
+                {%endif%}
+                {%if modul.2 == 'None'%}
+                  <h6 class="text-left"></h6>
+                {%endif%}
+                <h6 class="text-left" style="color: #FF6A0E;">{{modul.1}}</h6>
+              </div>
             </div>
           </div>
-          <div class="card kelas-gratis">
-            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg"> </div>
-            <h6 class="card-title text-left">Delbert Simonas</h6>
-            <div class="card-body">
-                <h5 class="card-title text-left">.....</h5>
-                <h6 class="card-text text-left" style="color: #FF6A0E;">Gratis</h6>
-            </div>
-          </div>
+          {%endif%}
+          {%endfor%}
         </div>
 
         <div class="d-flex bd-highlight" id="judul-button">
@@ -54,24 +84,38 @@
           <div class="p-2 bd-highlight"><button style="background-color: #FF6A0E; color: white; border-color: transparent;" class="btn btn-light">Lihat PETA Lainnya ></button></div>
         </div>
         <div class="d-flex row bd-highlight justify-content-center align-items-center mb-5" id="items8">
+          {%for modul in listModul%}
+          {% if modul.3 == 'peta unggulan'%}
           <div class="card kelas-gratis">
-            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg"> </div>
-            <h6 class="card-title text-left">Delbert Simonas</h6>
-            <div class="card-body">
-                <h5 class="card-title text-left">.....</h5>
-                <h6 class="card-text text-left" style="color: #FF6A0E;">Gratis</h6>
+            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="{{modul.4}}"> </div>
+            <h6 class="card-title text-left">{{modul.0}}</h6>
+            <div class="card-body d-flex flex-col align-items-end">
+              <div class="col">
+                {%if modul.2 == '1'%}
+                  <h6 class="text-left" id="star">☆☆☆☆★</h6>
+                {%endif%}
+                {%if modul.2 == '2'%}
+                  <h6 class="text-left" id="star">☆☆☆★★</h6>
+                {%endif%}
+                {%if modul.2 == '3'%}
+                  <h6 class="text-left" id="star">☆☆★★★</h6>
+                {%endif%}
+                {%if modul.2 == '4'%}
+                  <h6 class="text-left" id="star">☆★★★★</h6>
+                {%endif%}
+                {%if modul.2 == 5%}
+                  <h6 class="text-left" id="star">★★★★★</h6>
+                {%endif%}
+                {%if modul.2 == 'None'%}
+                  <h6 class="text-left"></h6>
+                {%endif%}
+                <h6 class="text-left" style="color: #FF6A0E;">{{modul.1}}</h6>
+              </div>
             </div>
           </div>
-          <div class="card kelas-gratis">
-            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg"> </div>
-            <h6 class="card-title text-left">Delbert Simonas</h6>
-            <div class="card-body">
-                <h5 class="card-title text-left">.....</h5>
-                <h6 class="card-text text-left" style="color: #FF6A0E;">Gratis</h6>
-            </div>
-          </div>
+          {%endif%}
+          {%endfor%}
         </div>
-        
       </div>
     </div>
 </section>
